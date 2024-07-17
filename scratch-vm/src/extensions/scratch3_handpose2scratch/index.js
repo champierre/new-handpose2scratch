@@ -154,48 +154,7 @@ const AvailableLocales = ['en', 'ja', 'ja-Hira'];
 
 class Scratch3Handpose2ScratchBlocks {
   get HANDS_MENU() {
-    return [
-      {
-        text: '1',
-        value: '1'
-      },
-      {
-        text: '2',
-        value: '2'
-      },
-      {
-        text: '3',
-        value: '3'
-      },
-      {
-        text: '4',
-        value: '4'
-      },
-      {
-        text: '5',
-        value: '5'
-      },
-      {
-        text: '6',
-        value: '6'
-      },
-      {
-        text: '7',
-        value: '7'
-      },
-      {
-        text: '8',
-        value: '8'
-      },
-      {
-        text: '9',
-        value: '9'
-      },
-      {
-        text: '10',
-        value: '10'
-      }
-    ]
+    return Array.from({ length: 10 }, (_, i) => ({ text: `${i + 1}`, value: `${i + 1}` }));
   }
 
   get KEYPOINTS_MENU() {
